@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkoutGit') {
       steps {
-        git(url: 'https://github.com/sasha-by/cats.git', branch: 'main')
+        git(url: 'https://github.com/sasha-by/cats.git', branch: 'main', credentialsId: '4c6eb882-1250-4039-b94e-9f54f9b86157', poll: true)
       }
     }
 
